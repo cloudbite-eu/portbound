@@ -1,0 +1,117 @@
+{
+ "date": "2026-12-05",
+ "v": 1,
+ "seed": "2026-12-05",
+ "made": "2026-11-07",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-12-05:neu",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "gdansk",
+   "good": "coffee"
+  },
+  {
+   "id": "h:2026-12-05:med",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 2,
+   "port": "piraeus"
+  },
+  {
+   "id": "h:2026-12-05:nae",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "a": "halifax",
+   "b": "montreal"
+  },
+  {
+   "id": "h:2026-12-05:ngm",
+   "tpl": "strike",
+   "sev": 3,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "kingston"
+  },
+  {
+   "id": "h:2026-12-05:naw",
+   "tpl": "carshow",
+   "sev": 3,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "seattle"
+  },
+  {
+   "id": "h:2026-12-05:sam",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "a": "santos",
+   "b": "buenosaires"
+  },
+  {
+   "id": "h:2026-12-05:eas",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "yokohama"
+  },
+  {
+   "id": "h:2026-12-05:sea",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 2,
+   "port": "portklang",
+   "good": "coats"
+  },
+  {
+   "id": "h:2026-12-05:sas",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 2,
+   "port": "chennai",
+   "good": "coffee"
+  },
+  {
+   "id": "h:2026-12-05:afw",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "tema"
+  },
+  {
+   "id": "h:2026-12-05:afs",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "daressalaam"
+  },
+  {
+   "id": "h:2026-12-05:oce",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1,
+   "port": "auckland"
+  },
+  {
+   "id": "w:2026-12-05",
+   "tpl": "chipshortage",
+   "sev": 2,
+   "start": "2026-12-05",
+   "days": 1
+  }
+ ]
+}

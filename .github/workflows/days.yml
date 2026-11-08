@@ -1,0 +1,64 @@
+# The game's daily news files.
+# The scheduled news task may push only to branches named claude/..., so it pushes the day files it wrote to a branch
+# claude/days-<date>. This workflow checks them, publishes them on main, where GitHub Pages serves them to the iPhone
+# app (https://cloudbite-eu.github.io/portbound/days/<date>.json), and removes the branch. Only the day files the pushed
+# commit added or changed in docs/days are taken; anything else in it is left out.
+name: Publish the day files
+
+on:
+  push:
+    branches: ['claude/days-*']
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: day-files
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Take the day files the pushed commit wrote
+        run: |
+          git fetch -q --no-tags --depth=2 origin "$GITHUB_SHA"
+          mkdir -p "$RUNNER_TEMP/days"
+          git diff --name-only --diff-filter=AM "$GITHUB_SHA~1" "$GITHUB_SHA" -- docs/days | while read -r f; do
+            git show "$GITHUB_SHA:$f" > "$RUNNER_TEMP/days/$(basename "$f")"
+          done
+
+      - name: Check them
+        run: python3 .github/days-check.py "$RUNNER_TEMP/days"
+
+      - name: Publish them on main
+        run: |
+          put() {
+            mkdir -p docs/days
+            cp "$RUNNER_TEMP"/days/*.json docs/days/
+            git add docs/days
+            if git diff --cached --quiet; then return 1; fi
+            git -c user.name="Portbound" -c user.email="hello@cloudbite.eu" commit -q -m "Day files of ${GITHUB_REF_NAME#claude/days-}"
+          }
+          if ! put; then echo "The site already has these files."; exit 0; fi
+          for i in 1 2 3; do
+            if git push -q origin HEAD:main; then echo "Published."; exit 0; fi
+            git fetch -q --depth=1 origin main && git reset -q --hard FETCH_HEAD
+            put || { echo "The site already has these files."; exit 0; }
+          done
+          exit 1
+
+      - name: Ask GitHub Pages to rebuild
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent
+
+      - name: Remove the branch
+        run: git push -q origin --delete "$GITHUB_REF_NAME"

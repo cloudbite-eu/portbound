@@ -1,0 +1,109 @@
+{
+ "date": "2026-11-29",
+ "v": 1,
+ "seed": "2026-11-29",
+ "made": "2026-11-07",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-11-29:neu",
+   "tpl": "dutycut",
+   "sev": 3,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "gdansk"
+  },
+  {
+   "id": "h:2026-11-29:med",
+   "tpl": "carshow",
+   "sev": 3,
+   "start": "2026-11-29",
+   "days": 2,
+   "port": "piraeus"
+  },
+  {
+   "id": "h:2026-11-29:nae",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "baltimore"
+  },
+  {
+   "id": "h:2026-11-29:ngm",
+   "tpl": "crane",
+   "sev": 2,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "miami"
+  },
+  {
+   "id": "h:2026-11-29:naw",
+   "tpl": "festival",
+   "sev": 3,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "losangeles"
+  },
+  {
+   "id": "h:2026-11-29:sam",
+   "tpl": "dutycut",
+   "sev": 3,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "santos"
+  },
+  {
+   "id": "h:2026-11-29:eas",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "busan",
+   "good": "coats"
+  },
+  {
+   "id": "h:2026-11-29:sea",
+   "tpl": "dutyup",
+   "sev": 2,
+   "start": "2026-11-29",
+   "days": 2,
+   "port": "manila"
+  },
+  {
+   "id": "h:2026-11-29:sas",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-11-29",
+   "days": 2,
+   "port": "chennai"
+  },
+  {
+   "id": "h:2026-11-29:afw",
+   "tpl": "pirates",
+   "sev": 3,
+   "start": "2026-11-29",
+   "days": 1,
+   "a": "abidjan",
+   "b": "casablanca"
+  },
+  {
+   "id": "h:2026-11-29:afs",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-11-29",
+   "days": 1,
+   "a": "durban",
+   "b": "capetown"
+  },
+  {
+   "id": "h:2026-11-29:oce",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-11-29",
+   "days": 1,
+   "port": "sydney",
+   "good": "phones"
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "date": "2026-11-10",
+ "v": 1,
+ "seed": "2026-11-10",
+ "made": "2026-11-07",
+ "events": [
+  {
+   "start": "2026-11-10",
+   "id": "r-2026-11-10-eia",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "losangeles",
+   "sev": 2,
+   "days": 1,
+   "h": "West Coast diesel above seven dollars a gallon",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  }
+ ],
+ "gen": [
+  {
+   "id": "h:2026-11-10:neu",
+   "tpl": "carshow",
+   "sev": 3,
+   "start": "2026-11-10",
+   "days": 1,
+   "port": "rotterdam"
+  },
+  {
+   "id": "h:2026-11-09:med",
+   "tpl": "lngspike",
+   "sev": 2,
+   "start": "2026-11-09",
+   "days": 2,
+   "port": "genoa"
+  },
+  {
+   "id": "h:2026-11-10:nae",
+   "tpl": "lngspike",
+   "sev": 2,
+   "start": "2026-11-10",
+   "days": 1,
+   "port": "baltimore"
+  },
+  {
+   "id": "h:2026-11-09:ngm",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-11-09",
+   "days": 2,
+   "a": "miami",
+   "b": "kingston"
+  },
+  {
+   "id": "h:2026-11-09:naw",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-11-09",
+   "days": 2,
+   "port": "manzanillo"
+  },
+  {
+   "id": "h:2026-11-10:sam",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-11-10",
+   "days": 1,
+   "port": "callao"
+  },
+  {
+   "id": "h:2026-11-10:eas",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-11-10",
+   "days": 1,
+   "port": "kaohsiung"
+  },
+  {
+   "id": "h:2026-11-10:sea",
+   "tpl": "festival",
+   "sev": 3,
+   "start": "2026-11-10",
+   "days": 1,
+   "port": "hochiminh"
+  },
+  {
+   "id": "h:2026-11-10:sas",
+   "tpl": "dutycut",
+   "sev": 2,
+   "start": "2026-11-10",
+   "days": 1,
+   "port": "chennai"
+  },
+  {
+   "id": "h:2026-11-10:afw",
+   "tpl": "storm",
+   "sev": 2,
+   "start": "2026-11-10",
+   "days": 1,
+   "a": "tema",
+   "b": "abidjan"
+  },
+  {
+   "id": "h:2026-11-09:afs",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-11-09",
+   "days": 2,
+   "port": "daressalaam"
+  },
+  {
+   "id": "h:2026-11-09:oce",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-11-09",
+   "days": 2,
+   "port": "sydney"
+  }
+ ]
+}
