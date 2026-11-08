@@ -1,0 +1,109 @@
+{
+ "date": "2026-11-21",
+ "v": 1,
+ "seed": "2026-11-21",
+ "made": "2026-11-07",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-11-21:neu",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "port": "rotterdam"
+  },
+  {
+   "id": "h:2026-11-21:med",
+   "tpl": "lngspike",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "port": "valencia"
+  },
+  {
+   "id": "h:2026-11-21:nae",
+   "tpl": "storm",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "a": "newyork",
+   "b": "savannah"
+  },
+  {
+   "id": "h:2026-11-21:ngm",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 2,
+   "port": "miami"
+  },
+  {
+   "id": "h:2026-11-21:naw",
+   "tpl": "heatwave",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "port": "manzanillo"
+  },
+  {
+   "id": "h:2026-11-21:sam",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-11-21",
+   "days": 1,
+   "a": "santos",
+   "b": "buenosaires"
+  },
+  {
+   "id": "h:2026-11-21:eas",
+   "tpl": "dutycut",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "port": "yokohama"
+  },
+  {
+   "id": "h:2026-11-21:sea",
+   "tpl": "surplus",
+   "sev": 3,
+   "start": "2026-11-21",
+   "days": 1,
+   "port": "singapore",
+   "good": "lng"
+  },
+  {
+   "id": "h:2026-11-21:sas",
+   "tpl": "storm",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "a": "colombo",
+   "b": "chennai"
+  },
+  {
+   "id": "h:2026-11-21:afw",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 2,
+   "port": "tema"
+  },
+  {
+   "id": "h:2026-11-21:afs",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 2,
+   "port": "mombasa"
+  },
+  {
+   "id": "h:2026-11-21:oce",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-11-21",
+   "days": 1,
+   "port": "melbourne"
+  }
+ ]
+}

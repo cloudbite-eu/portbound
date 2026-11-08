@@ -1,0 +1,110 @@
+{
+ "date": "2026-11-28",
+ "v": 1,
+ "seed": "2026-11-28",
+ "made": "2026-11-07",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-11-27:neu",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-11-27",
+   "days": 2,
+   "port": "lehavre",
+   "good": "cars"
+  },
+  {
+   "id": "h:2026-11-28:med",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "piraeus",
+   "good": "cars"
+  },
+  {
+   "id": "h:2026-11-28:nae",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "newyork"
+  },
+  {
+   "id": "h:2026-11-27:ngm",
+   "tpl": "surplus",
+   "sev": 3,
+   "start": "2026-11-27",
+   "days": 2,
+   "port": "miami",
+   "good": "coffee"
+  },
+  {
+   "id": "h:2026-11-28:naw",
+   "tpl": "pirates",
+   "sev": 3,
+   "start": "2026-11-28",
+   "days": 1,
+   "a": "losangeles",
+   "b": "oakland"
+  },
+  {
+   "id": "h:2026-11-27:sam",
+   "tpl": "heatwave",
+   "sev": 3,
+   "start": "2026-11-27",
+   "days": 2,
+   "port": "riodejaneiro"
+  },
+  {
+   "id": "h:2026-11-28:eas",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "kaohsiung"
+  },
+  {
+   "id": "h:2026-11-28:sea",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "hochiminh"
+  },
+  {
+   "id": "h:2026-11-28:sas",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "a": "jebelali",
+   "b": "chennai"
+  },
+  {
+   "id": "h:2026-11-28:afw",
+   "tpl": "festival",
+   "sev": 3,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "dakar"
+  },
+  {
+   "id": "h:2026-11-28:afs",
+   "tpl": "dutyup",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "durban"
+  },
+  {
+   "id": "h:2026-11-28:oce",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-11-28",
+   "days": 1,
+   "port": "brisbane"
+  }
+ ]
+}
