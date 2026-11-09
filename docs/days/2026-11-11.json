@@ -2,8 +2,47 @@
  "date": "2026-11-11",
  "v": 1,
  "seed": "2026-11-11",
- "made": "2026-11-07",
- "events": [],
+ "made": "2026-11-09",
+ "events": [
+  {
+   "start": "2026-11-11",
+   "id": "r1",
+   "cat": "food",
+   "tpl": "surplus",
+   "port": "santos",
+   "good": "coffee",
+   "sev": 2,
+   "days": 3,
+   "h": "Ample coffee supply follows Brazil's large harvest",
+   "src": "International Coffee Organization",
+   "url": "https://ico.org/"
+  },
+  {
+   "start": "2026-11-11",
+   "id": "r2",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "losangeles",
+   "sev": 2,
+   "days": 2,
+   "h": "West Coast diesel stays the dearest in the United States",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-11",
+   "id": "r3",
+   "cat": "energy",
+   "tpl": "surplus",
+   "port": "rotterdam",
+   "good": "lng",
+   "sev": 1,
+   "days": 2,
+   "h": "Rotterdam's gas terminal now runs a fourth LNG tank",
+   "src": "Port of Rotterdam",
+   "url": "https://www.portofrotterdam.com/en/news-and-press-releases"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-11:neu",

@@ -2,8 +2,22 @@
  "date": "2026-11-13",
  "v": 1,
  "seed": "2026-11-13",
- "made": "2026-11-07",
- "events": [],
+ "made": "2026-11-09",
+ "events": [
+  {
+   "start": "2026-11-11",
+   "id": "r1",
+   "cat": "food",
+   "tpl": "surplus",
+   "port": "santos",
+   "good": "coffee",
+   "sev": 2,
+   "days": 3,
+   "h": "Ample coffee supply follows Brazil's large harvest",
+   "src": "International Coffee Organization",
+   "url": "https://ico.org/"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-13:neu",

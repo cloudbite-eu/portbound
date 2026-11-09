@@ -1,0 +1,118 @@
+{
+ "date": "2026-12-08",
+ "v": 1,
+ "seed": "2026-12-08",
+ "made": "2026-11-09",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-12-08:neu",
+   "tpl": "surplus",
+   "sev": 3,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "rotterdam",
+   "good": "cars"
+  },
+  {
+   "id": "h:2026-12-08:med",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-12-08",
+   "days": 1,
+   "a": "genoa",
+   "b": "istanbul"
+  },
+  {
+   "id": "h:2026-12-08:nae",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "halifax"
+  },
+  {
+   "id": "h:2026-12-08:ngm",
+   "tpl": "dutycut",
+   "sev": 2,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "kingston"
+  },
+  {
+   "id": "h:2026-12-08:naw",
+   "tpl": "festival",
+   "sev": 3,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "manzanillo"
+  },
+  {
+   "id": "h:2026-12-07:sam",
+   "tpl": "pirates",
+   "sev": 3,
+   "start": "2026-12-07",
+   "days": 2,
+   "a": "santos",
+   "b": "riodejaneiro"
+  },
+  {
+   "id": "h:2026-12-07:eas",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-07",
+   "days": 2,
+   "port": "kaohsiung",
+   "good": "lng"
+  },
+  {
+   "id": "h:2026-12-08:sea",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "manila",
+   "good": "coffee"
+  },
+  {
+   "id": "h:2026-12-07:sas",
+   "tpl": "dutyup",
+   "sev": 3,
+   "start": "2026-12-07",
+   "days": 2,
+   "port": "chennai"
+  },
+  {
+   "id": "h:2026-12-07:afw",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-12-07",
+   "days": 2,
+   "a": "lagos",
+   "b": "tema"
+  },
+  {
+   "id": "h:2026-12-08:afs",
+   "tpl": "dutyup",
+   "sev": 3,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "capetown"
+  },
+  {
+   "id": "h:2026-12-08:oce",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-12-08",
+   "days": 1,
+   "port": "melbourne"
+  },
+  {
+   "id": "w:2026-12-08",
+   "tpl": "phonelaunch",
+   "sev": 1,
+   "start": "2026-12-08",
+   "days": 1
+  }
+ ]
+}

@@ -2,8 +2,46 @@
  "date": "2026-11-10",
  "v": 1,
  "seed": "2026-11-10",
- "made": "2026-11-07",
+ "made": "2026-11-08",
  "events": [
+  {
+   "start": "2026-11-10",
+   "id": "r-2026-11-10-eia-east",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "newyork",
+   "sev": 2,
+   "days": 1,
+   "h": "East Coast diesel over two dollars dearer than a year ago",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-10",
+   "id": "r-2026-11-10-fao",
+   "cat": "food",
+   "tpl": "surplus",
+   "good": "grain",
+   "port": "gdansk",
+   "sev": 2,
+   "days": 1,
+   "h": "World cereal prices fell in October, food price index shows",
+   "src": "FAO Food Price Index",
+   "url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/"
+  },
+  {
+   "start": "2026-11-10",
+   "id": "r-2026-11-10-sgfuel",
+   "cat": "energy",
+   "tpl": "surplus",
+   "good": "fuel",
+   "port": "singapore",
+   "sev": 1,
+   "days": 1,
+   "h": "Singapore fuel oil stocks build into November",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/singapore-fuel-oil-stocks-inch-up-3-coming-into-november/"
+  },
   {
    "start": "2026-11-10",
    "id": "r-2026-11-10-eia",

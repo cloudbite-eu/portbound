@@ -1,0 +1,116 @@
+{
+ "date": "2026-12-09",
+ "v": 1,
+ "seed": "2026-12-09",
+ "made": "2026-11-09",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-12-09:neu",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 2,
+   "port": "rotterdam"
+  },
+  {
+   "id": "h:2026-12-09:med",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "piraeus"
+  },
+  {
+   "id": "h:2026-12-09:nae",
+   "tpl": "surplus",
+   "sev": 3,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "savannah",
+   "good": "phones"
+  },
+  {
+   "id": "h:2026-12-09:ngm",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-12-09",
+   "days": 2,
+   "a": "kingston",
+   "b": "cartagena"
+  },
+  {
+   "id": "h:2026-12-09:naw",
+   "tpl": "fuelspike",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "manzanillo"
+  },
+  {
+   "id": "h:2026-12-09:sam",
+   "tpl": "crane",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "callao"
+  },
+  {
+   "id": "h:2026-12-09:eas",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "kaohsiung",
+   "good": "fuel"
+  },
+  {
+   "id": "h:2026-12-09:sea",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "manila"
+  },
+  {
+   "id": "h:2026-12-09:sas",
+   "tpl": "dutyup",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "karachi"
+  },
+  {
+   "id": "h:2026-12-09:afw",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1,
+   "port": "casablanca"
+  },
+  {
+   "id": "h:2026-12-09:afs",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-12-09",
+   "days": 1,
+   "a": "capetown",
+   "b": "daressalaam"
+  },
+  {
+   "id": "h:2026-12-09:oce",
+   "tpl": "heatwave",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 2,
+   "port": "sydney"
+  },
+  {
+   "id": "w:2026-12-09",
+   "tpl": "chipshortage",
+   "sev": 2,
+   "start": "2026-12-09",
+   "days": 1
+  }
+ ]
+}
