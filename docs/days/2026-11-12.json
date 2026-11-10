@@ -2,8 +2,47 @@
  "date": "2026-11-12",
  "v": 1,
  "seed": "2026-11-12",
- "made": "2026-11-09",
+ "made": "2026-11-10",
  "events": [
+  {
+   "start": "2026-11-12",
+   "id": "r4",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal keeps a draft limit at its largest locks",
+   "src": "Panama Canal Authority",
+   "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/"
+  },
+  {
+   "start": "2026-11-12",
+   "id": "r5",
+   "cat": "food",
+   "tpl": "surplus",
+   "port": "houston",
+   "good": "grain",
+   "sev": 1,
+   "days": 1,
+   "h": "World cereal prices fell in October as wheat and maize eased",
+   "src": "FAO Food Price Index",
+   "url": "https://www.fao.org/worldfoodsituation/foodpricesindex/en/"
+  },
+  {
+   "start": "2026-11-12",
+   "id": "r6",
+   "cat": "crime",
+   "tpl": "pirates",
+   "a": "mumbai",
+   "b": "mombasa",
+   "sev": 2,
+   "days": 1,
+   "h": "Piracy risk stays elevated off the Somali coast",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/somali-piracy-resurgence-understanding-the-risk-to-commercial-shipping/"
+  },
   {
    "start": "2026-11-11",
    "id": "r1",
