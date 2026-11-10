@@ -4,7 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Portbound</title>
-<meta name="description" content="Portbound: today's news moves today's prices. Build a trade empire in the real world.">
+<meta name="description" content="Today's news moves today's prices. One run a day, the same for every player, set where the day's real news is.">
+<!-- the link's card in chats (round 14, Move 4); the address moves with the site's own domain -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Portbound">
+<meta property="og:title" content="Portbound">
+<meta property="og:description" content="Today's news moves today's prices. One run a day, the same for everyone.">
+<meta property="og:url" content="https://cloudbite-eu.github.io/portbound/">
+<meta property="og:image" content="https://cloudbite-eu.github.io/portbound/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portbound: today's run on an iPhone">
+<meta name="twitter:card" content="summary_large_image">
+<!-- from the App Store release: Safari's Smart App Banner
+<meta name="apple-itunes-app" content="app-id=6832214671">
+-->
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
@@ -13,14 +27,51 @@
 <header><a class="name" href="./"><img src="icon.png" alt="">Portbound</a></header>
 <main>
   <h1>Today's news moves today's prices.</h1>
-  <p class="lead">Build a trade empire in the real world.</p>
-  <p>Ship coffee, phones, coats and more between real ports. Buy low, sell high, grow a fleet and race the rival
-  trading houses. Every day the world is the same for every player, moved by that day's real news.</p>
-  <p><span class="mark">Coming to iPhone</span> &nbsp;Now in testing.</p>
+  <p class="lead">One run a day, the same for every player, set where the day's real news is.</p>
+
+  <section class="today card" id="today" hidden>
+    <p class="today-no" id="today-no"></p>
+    <p class="today-where" id="today-where"></p>
+    <p class="today-head" id="today-head"></p>
+    <p class="today-src" id="today-src"></p>
+  </section>
+
+  <div class="shots">
+    <figure><img src="img/run-1.jpg" width="600" height="1298" alt="Today's run: the news that set it, the ship and the captain to beat"><figcaption>The news sets the run.</figcaption></figure>
+    <figure><img src="img/run-2.jpg" width="600" height="1298" alt="A trip: each good with what it earns at its best port"><figcaption>Every choice shows its result.</figcaption></figure>
+    <figure><img src="img/run-3.jpg" width="600" height="1298" alt="The result: three trips, a score out of 100 and the captain's score"><figcaption>Three trips, a score out of 100.</figcaption></figure>
+  </div>
+
+  <p class="avail"><span class="mark">Coming to iPhone</span> Now in testing.</p>
+  <p>Between runs, build a trade empire: ship coffee, phones, coats and more between 60 real ports, grow a fleet and
+  race the rival trading houses, in a world moved every day by that day's news.</p>
   <div class="card">
     <nav><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></nav>
   </div>
 </main>
 <footer>© 2026 Lukasz Abramowicz</footer>
+<script>
+// today's run, from today's day file (the same file every player's game reads): where it is and the news that set it
+(function () {
+  var d = new Date(), date = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  var get = function (u) { return fetch(u, { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); };
+  Promise.all([get('days/' + date + '.json'), get('places.json')]).then(function (a) {
+    var f = a[0], P = a[1];
+    if (!f || f.date !== date || f.final !== true || !P || !Array.isArray(f.events) || !f.events.length) return;
+    var e = f.events.filter(function (x) { return x.lead === true; })[0] || f.events[0];
+    var h = typeof e.h === 'string' ? e.h : (e.h && e.h.en) || '';
+    var region = e.region && P.regions[e.region] ? P.regions[e.region] : null;
+    var place = e.port || e.b || null;
+    if (!region && place && P.ports[place]) region = P.regions[P.ports[place][1]];
+    if (!h) return;
+    var day1 = Date.UTC(2026, 10, 7), p = date.split('-'), no = Math.max(1, Math.round((Date.UTC(+p[0], +p[1] - 1, +p[2]) - day1) / 864e5) + 1);
+    document.getElementById('today-no').textContent = 'Portbound #' + no;
+    document.getElementById('today-where').textContent = region ? "Today's run: " + region : "Today's run";
+    document.getElementById('today-head').textContent = h;
+    document.getElementById('today-src').textContent = e.src ? 'Source: ' + e.src : '';
+    document.getElementById('today').hidden = false;
+  });
+})();
+</script>
 </body>
 </html>

@@ -16,3 +16,16 @@ a { color: var(--accent); }
 .mark { display: inline-block; background: var(--sand); color: #3b2a00; font-weight: 700; font-size: 14px; border-radius: 999px; padding: 2px 12px; }
 footer { max-width: 720px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); color: var(--muted); font-size: 14px; }
 nav a { margin-right: 18px; }
+.today { border-left: 6px solid var(--sand); }
+.today p { margin: 0; }
+.today .today-no { font-size: 14px; font-weight: 700; color: var(--muted); }
+.today .today-where { font-size: 20px; font-weight: 800; margin-top: 2px; }
+.today .today-head { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 19px; line-height: 1.4; margin-top: 8px; }
+.today .today-src { font-size: 14px; color: var(--muted); margin-top: 6px; }
+.shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin: 24px 0 8px; }
+.shots figure { margin: 0; min-width: 0; }
+.shots img { width: 100%; height: auto; border-radius: 18px; border: 1px solid var(--line); display: block; }
+.shots figcaption { font-size: 15px; font-weight: 700; margin-top: 8px; text-align: center; }
+@media (max-width: 560px) { .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; } .shots figure { scroll-snap-align: start; } }
+.avail { margin-top: 18px; }
+.avail .mark { margin-right: 6px; }
