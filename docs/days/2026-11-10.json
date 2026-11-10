@@ -154,5 +154,6 @@
    "days": 2,
    "port": "sydney"
   }
- ]
+ ],
+ "final": true
 }
