@@ -1,0 +1,66 @@
+# Tomorrow's paper, final before any time zone reaches tomorrow (round 14). The news task finalises tomorrow's day file
+# at 06:10 UTC, with a catch-up at 08:10; this workflow is the site's own safety net at 08:30 and 09:15 UTC: a draft
+# becomes final with the news it has, and with no file at all a quiet day's file is written. At 10:00 UTC the first time
+# zone (UTC+14) reaches tomorrow; from then on the file never changes. The day's run is built only from a final file.
+# Run by hand (Actions, this workflow, Run workflow) with a date to make that date final now.
+name: Make tomorrow's paper final
+
+on:
+  schedule:
+    - cron: '30 8 * * *'
+    - cron: '15 9 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'The date to make final (YYYY-MM-DD); empty: tomorrow in UTC'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: day-files
+  cancel-in-progress: false
+
+jobs:
+  final:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Make it final
+        env:
+          DATE: ${{ inputs.date }}
+        run: |
+          python3 .github/days-final.py docs/days "$DATE"
+          mkdir -p "$RUNNER_TEMP/check"
+          for f in $(git status --porcelain -- docs/days | awk '{print $2}'); do cp "$f" "$RUNNER_TEMP/check/"; done
+          if ls "$RUNNER_TEMP"/check/*.json > /dev/null 2>&1; then python3 .github/days-check.py "$RUNNER_TEMP/check"; fi
+
+      - name: Publish it on main
+        id: publish
+        run: |
+          if git diff --quiet -- docs/days && [ -z "$(git status --porcelain -- docs/days)" ]; then echo "Nothing to publish."; exit 0; fi
+          d="${{ inputs.date }}"; [ -n "$d" ] || d=$(date -u -d tomorrow +%F)
+          git add docs/days
+          git -c user.name="Portbound" -c user.email="hello@cloudbite.eu" commit -q -m "Final day file of $d"
+          for i in 1 2 3; do
+            if git push -q origin HEAD:main; then echo "published=1" >> "$GITHUB_OUTPUT"; echo "Published."; exit 0; fi
+            git fetch -q --depth=1 origin main && git reset -q --hard FETCH_HEAD
+            python3 .github/days-final.py docs/days "${{ inputs.date }}"
+            [ -n "$(git status --porcelain -- docs/days)" ] || { echo "The site already has it final."; exit 0; }
+            git add docs/days && git -c user.name="Portbound" -c user.email="hello@cloudbite.eu" commit -q -m "Final day file of $d"
+          done
+          exit 1
+
+      - name: Ask GitHub Pages to rebuild
+        if: steps.publish.outputs.published == '1'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" --silent

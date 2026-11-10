@@ -2,7 +2,8 @@
 # The scheduled news task may push only to branches named claude/..., so it pushes the day files it wrote to a branch
 # claude/days-<date>. This workflow checks them, publishes them on main, where GitHub Pages serves them to the iPhone
 # app (https://cloudbite-eu.github.io/portbound/days/<date>.json), and removes the branch. Only the day files the pushed
-# commit added or changed in docs/days are taken; anything else in it is left out.
+# commit added or changed in docs/days are taken; anything else in it is left out. A file the site has as final is never
+# changed: a new copy of it is set aside (round 14).
 name: Publish the day files
 
 on:
@@ -35,12 +36,13 @@ jobs:
           done
 
       - name: Check them
-        run: python3 .github/days-check.py "$RUNNER_TEMP/days"
+        run: python3 .github/days-check.py "$RUNNER_TEMP/days" --site docs/days
 
       - name: Publish them on main
         run: |
           put() {
             mkdir -p docs/days
+            ls "$RUNNER_TEMP"/days/*.json > /dev/null 2>&1 || return 1
             cp "$RUNNER_TEMP"/days/*.json docs/days/
             git add docs/days
             if git diff --cached --quiet; then return 1; fi
