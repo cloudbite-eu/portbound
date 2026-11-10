@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Press kit · Portbound</title>
+<meta name="description" content="Portbound for the press: the pitch, the facts, screenshots, the icon and the app preview.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<style>
+  .facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 18px; margin: 0; }
+  .facts dt { font-weight: 700; }
+  .facts dd { margin: 0; min-width: 0; }
+  .files { padding-left: 1.1em; }
+  .files li { margin: 4px 0; }
+  .press-shots { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  @media (max-width: 720px) { .press-shots { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  video { width: min(100%, 300px); height: auto; border-radius: 18px; border: 1px solid var(--line); display: block; background: var(--deep); }
+</style>
+</head>
+<body>
+<header><a class="name" href="./"><img src="icon.png" alt="">Portbound</a></header>
+<main>
+  <h1>Press kit</h1>
+  <p class="lead">Portbound is a free iPhone trading game where today's real news moves today's prices.</p>
+  <p>Every morning the game gets a few facts from public sources (weather services, port authorities, energy and food
+  agencies), each in the game's own words with its source named, and sets one run where the lead story is. Every
+  player in the world gets the same run: one ship, 1,000 play coins, three trips. Each choice shows exactly what it
+  earns before the ship sails. The score is out of 100 against the best plan of the day, a rival captain plays the same
+  run, and the next day's paper prints the plan that scored 100. Between runs the world stays open: a trading house to
+  grow across 60 real ports in 12 regions, with coffee, phones, coats, cars, fuel, grain, chips and LNG.</p>
+
+  <h2>Facts</h2>
+  <div class="card">
+    <dl class="facts">
+      <dt>Name</dt><dd>Portbound: Ships &amp; Trade</dd>
+      <dt>Developer</dt><dd>Lukasz Abramowicz, Poland</dd>
+      <dt>Platform</dt><dd>iPhone, iOS 16.2 or later</dd>
+      <dt>Price</dt><dd>Free. No ads, no in-app purchases, no account.</dd>
+      <dt>Release</dt><dd id="release">To be announced</dd>
+      <dt>Language</dt><dd>English</dd>
+      <dt>A run</dt><dd>About three minutes, once a day</dd>
+      <dt>Uses</dt><dd>Game Center (leaderboards, achievements, a challenge), a widget, Live Activities, iCloud saves</dd>
+      <dt>Contact</dt><dd><a href="mailto:hello@cloudbite.eu">hello@cloudbite.eu</a></dd>
+    </dl>
+  </div>
+
+  <h2>Screenshots</h2>
+  <p class="muted">From the game as it runs, 1320 x 2868. Tap one for the full size.</p>
+  <div class="shots press-shots">
+    <figure><a href="press/1-paper.png"><img src="press/1-paper-small.jpg" width="440" height="956" alt="The day's paper: a real headline lit on the map"></a><figcaption>The news</figcaption></figure>
+    <figure><a href="press/2-sail.png"><img src="press/2-sail-small.jpg" width="440" height="956" alt="A ship's trade: how many crates, and what each choice earns"></a><figcaption>A trade</figcaption></figure>
+    <figure><a href="press/3-result.png"><img src="press/3-result-small.jpg" width="440" height="956" alt="Today's run: the score out of 100 against the day's captain"></a><figcaption>The run</figcaption></figure>
+    <figure><a href="press/4-share.png"><img src="press/4-share-small.jpg" width="440" height="956" alt="The share card of a run"></a><figcaption>The share</figcaption></figure>
+    <figure><a href="press/5-fleet.png"><img src="press/5-fleet-small.jpg" width="440" height="956" alt="A fleet across four regions of the world map"></a><figcaption>The fleet</figcaption></figure>
+  </div>
+
+  <h2>App preview</h2>
+  <video src="press/preview.mp4" controls playsinline preload="none" poster="press/3-result-small.jpg" width="443" height="960"></video>
+  <p class="muted">886 x 1920, H.264, with the game's own music.</p>
+
+  <h2>Files</h2>
+  <ul class="files">
+    <li><a href="press/icon-1024.png">The icon</a> (1024 x 1024 PNG)</li>
+    <li><a href="press/preview.mp4">The app preview</a> (MP4)</li>
+    <li>The screenshots: tap each one above for the full size</li>
+  </ul>
+
+  <h2>How the news works</h2>
+  <p>The day's facts are a small public file, the same for every player and every build of the game. No people, no
+  companies, and no tragedy turned into a deal: a disaster can close a port, never pay. The prices and the companies in
+  the game are invented; the ports and the news are real.</p>
+
+  <div class="card">
+    <nav><a href="./">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy policy</a></nav>
+  </div>
+</main>
+<footer>© 2026 Lukasz Abramowicz</footer>
+</body>
+</html>
