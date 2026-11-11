@@ -2,20 +2,32 @@
  "date": "2026-11-12",
  "v": 1,
  "seed": "2026-11-12",
- "made": "2026-11-10",
+ "made": "2026-11-11",
  "events": [
   {
    "start": "2026-11-12",
-   "id": "r4",
-   "cat": "ports",
-   "tpl": "lanelimit",
-   "a": "veracruz",
-   "b": "losangeles",
+   "id": "r7",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "valencia",
    "sev": 1,
    "days": 1,
-   "h": "Panama Canal keeps a draft limit at its largest locks",
-   "src": "Panama Canal Authority",
-   "url": "https://pancanal.com/en/maritime-services/advisory-to-shipping/"
+   "lead": true,
+   "h": "Wind warning on the Valencia coast on Thursday",
+   "src": "Meteoalarm (EUMETNET)",
+   "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-spain/41975c6e-b843-4a3f-a1e3-932888a72b38"
+  },
+  {
+   "start": "2026-11-12",
+   "id": "r8",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "singapore",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel is in short supply at Singapore for prompt dates",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-east-of-suez-bunker-fuel-availability-outlook-209/"
   },
   {
    "start": "2026-11-12",
@@ -182,5 +194,6 @@
    "days": 1,
    "port": "brisbane"
   }
- ]
+ ],
+ "final": true
 }
