@@ -2,8 +2,21 @@
  "date": "2026-11-14",
  "v": 1,
  "seed": "2026-11-14",
- "made": "2026-11-09",
- "events": [],
+ "made": "2026-11-12",
+ "events": [
+  {
+   "start": "2026-11-14",
+   "id": "r13",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "houston",
+   "sev": 2,
+   "days": 1,
+   "h": "Gulf Coast diesel costs two thirds more than a year ago",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-14:neu",
