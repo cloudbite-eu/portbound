@@ -2,8 +2,57 @@
  "date": "2026-11-13",
  "v": 1,
  "seed": "2026-11-13",
- "made": "2026-11-09",
+ "made": "2026-11-12",
  "events": [
+  {
+   "start": "2026-11-13",
+   "id": "r9",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "hamburg",
+   "sev": 2,
+   "days": 1,
+   "lead": true,
+   "h": "Gale warning on the German North Sea coast on Friday",
+   "src": "Meteoalarm (EUMETNET)",
+   "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-germany/bde090c9-6251-4421-890b-77974fec9224"
+  },
+  {
+   "start": "2026-11-13",
+   "id": "r10",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "rotterdam",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel is tight at Rotterdam for prompt delivery",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-207/"
+  },
+  {
+   "start": "2026-11-13",
+   "id": "r11",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "newyork",
+   "sev": 2,
+   "days": 1,
+   "h": "East Coast diesel costs over half more than a year ago",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-13",
+   "id": "r12",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "jebelali",
+   "sev": 1,
+   "days": 1,
+   "h": "Fujairah fuel stocks fell for the first time in a month",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/fujairah-data-oil-product-stockpiles-drop-for-first-time-in-four-weeks/"
+  },
   {
    "start": "2026-11-11",
    "id": "r1",
@@ -120,5 +169,6 @@
    "days": 1,
    "port": "auckland"
   }
- ]
+ ],
+ "final": true
 }
