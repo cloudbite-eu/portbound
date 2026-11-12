@@ -29,3 +29,16 @@ nav a { margin-right: 18px; }
 @media (max-width: 560px) { .shots { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 72%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; } .shots figure { scroll-snap-align: start; } }
 .avail { margin-top: 18px; }
 .avail .mark { margin-right: 6px; }
+/* a shared score: the dare, and where to get the game */
+.dare { border: 2px solid var(--ink); border-left-width: 8px; border-left-color: var(--sand); margin-top: 0; margin-bottom: 28px; }
+.dare p { margin: 0; }
+.dare .dare-say { font-size: 30px; line-height: 1.15; font-weight: 800; text-wrap: balance; }
+.dare .dare-run { font-size: 17px; font-weight: 700; margin-top: 6px; }
+.dare .dare-head { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 19px; line-height: 1.4; margin-top: 8px; }
+.dare .dare-then { margin-top: 8px; }
+.dare .store { margin-top: 14px; }
+.dare .dare-free { margin-top: 8px; }
+.store { display: inline-block; background: var(--sand); color: #3b2a00; font-weight: 800; font-size: 18px; text-decoration: none; border: 2px solid #3b2a00; border-radius: 14px; padding: 10px 20px; box-shadow: 0 4px 0 rgba(59, 42, 0, 0.55); }
+.store:active { transform: translateY(3px); box-shadow: 0 1px 0 rgba(59, 42, 0, 0.55); }
+.store:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.avail .store { margin-right: 10px; }

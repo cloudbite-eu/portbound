@@ -16,9 +16,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Portbound: today's run on an iPhone">
 <meta name="twitter:card" content="summary_large_image">
-<!-- from the App Store release: Safari's Smart App Banner
+<!-- Safari's Smart App Banner (from the App Store release) -->
 <meta name="apple-itunes-app" content="app-id=6832214671">
--->
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
@@ -26,6 +25,17 @@
 <body>
 <header><a class="name" href="./"><img src="icon.png" alt="">Portbound</a></header>
 <main>
+  <!-- a shared score (version 1.1's share line ends with this page's address and ?n=<the run's number>&s=<the score>):
+       the dare, the run it was, and where to get the game. Nothing but those two numbers comes with the link. -->
+  <section class="dare card" id="dare" hidden>
+    <p class="dare-say" id="dare-say"></p>
+    <p class="dare-run" id="dare-run"></p>
+    <p class="dare-head" id="dare-head" hidden></p>
+    <p class="dare-then" id="dare-then"></p>
+    <a class="store" href="https://apps.apple.com/app/id6832214671">Get Portbound for iPhone</a>
+    <p class="muted dare-free">Free. No ads, nothing to buy.</p>
+  </section>
+
   <h1>Today's news moves today's prices.</h1>
   <p class="lead">One run a day, the same for every player, set where the day's real news is.</p>
 
@@ -42,7 +52,7 @@
     <figure><img src="img/run-3.jpg" width="600" height="1298" alt="The result: three trips, a score out of 100 and the captain's score"><figcaption>Three trips, a score out of 100.</figcaption></figure>
   </div>
 
-  <p class="avail"><span class="mark">Coming to iPhone</span> Now in testing.</p>
+  <p class="avail" id="get"><a class="store" href="https://apps.apple.com/app/id6832214671">Get Portbound for iPhone</a> <span class="muted">Free. No ads, nothing to buy.</span></p>
   <p>Between runs, build a trade empire: ship coffee, phones, coats and more between 60 real ports, grow a fleet and
   race the rival trading houses, in a world moved every day by that day's news.</p>
   <div class="card">
@@ -51,26 +61,52 @@
 </main>
 <footer>© 2026 Lukasz Abramowicz</footer>
 <script>
-// today's run, from today's day file (the same file every player's game reads): where it is and the news that set it
+// The world's day (version 1.1: the game's date is the UTC date, the same for every player) and its run's number;
+// today's run from today's day file (the same file every player's game reads): where it is and the news that set it.
+// A shared score (?n=<the run's number>&s=<the score>, whole numbers, nothing else read): the dare over the page.
 (function () {
-  var d = new Date(), date = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  var DAY1 = Date.UTC(2026, 10, 16);   // run #1: the launch day, 16 November 2026
+  var iso = function (ms) { return new Date(ms).toISOString().slice(0, 10); };
+  var now = new Date(), today = iso(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+  var noOf = function (date) { var p = date.split('-'); return Math.max(1, Math.round((Date.UTC(+p[0], +p[1] - 1, +p[2]) - DAY1) / 864e5) + 1); };
+  var dateOf = function (no) { return iso(DAY1 + (no - 1) * 864e5); };
   var get = function (u) { return fetch(u, { cache: 'no-cache' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; }); };
-  Promise.all([get('days/' + date + '.json'), get('places.json')]).then(function (a) {
-    var f = a[0], P = a[1];
-    if (!f || f.date !== date || f.final !== true || !P || !Array.isArray(f.events) || !f.events.length) return;
-    var e = f.events.filter(function (x) { return x.lead === true; })[0] || f.events[0];
-    var h = typeof e.h === 'string' ? e.h : (e.h && e.h.en) || '';
-    var region = e.region && P.regions[e.region] ? P.regions[e.region] : null;
-    var place = e.port || e.b || null;
-    if (!region && place && P.ports[place]) region = P.regions[P.ports[place][1]];
-    if (!h) return;
-    var day1 = Date.UTC(2026, 10, 7), p = date.split('-'), no = Math.max(1, Math.round((Date.UTC(+p[0], +p[1] - 1, +p[2]) - day1) / 864e5) + 1);
-    document.getElementById('today-no').textContent = 'Portbound #' + no;
-    document.getElementById('today-where').textContent = region ? "Today's run: " + region : "Today's run";
-    document.getElementById('today-head').textContent = h;
-    document.getElementById('today-src').textContent = e.src ? 'Source: ' + e.src : '';
+  var places = get('places.json');
+  // a day's lead: its headline, its source, its region; null with no final file or no headline
+  var leadOf = function (date) {
+    return Promise.all([get('days/' + date + '.json'), places]).then(function (a) {
+      var f = a[0], P = a[1];
+      if (!f || f.date !== date || !(f.final === true || f.model >= 2) || !P || !Array.isArray(f.events) || !f.events.length) return null;
+      var e = f.events.filter(function (x) { return x.lead === true; })[0] || f.events[0];
+      var h = typeof e.h === 'string' ? e.h : (e.h && e.h.en) || '';
+      var region = e.region && P.regions[e.region] ? P.regions[e.region] : null;
+      var place = e.port || e.b || null;
+      if (!region && place && P.ports[place]) region = P.regions[P.ports[place][1]];
+      return h ? { h: h, src: e.src || '', region: region } : null;
+    });
+  };
+  var set = function (id, text) { var n = document.getElementById(id); n.textContent = text; return n; };
+  leadOf(today).then(function (L) {
+    if (!L) return;
+    set('today-no', 'Portbound #' + noOf(today));
+    set('today-where', L.region ? "Today's run: " + L.region : "Today's run");
+    set('today-head', L.h);
+    set('today-src', L.src ? 'Source: ' + L.src : '');
     document.getElementById('today').hidden = false;
   });
+  // the dare
+  var q = /^\?(?:.*&)?n=(\d{1,5})(?:&|$)/.exec(location.search), q2 = /[?&]s=(\d{1,3})(?:&|$)/.exec(location.search);
+  var n = q ? parseInt(q[1], 10) : 0, s = q2 ? parseInt(q2[1], 10) : -1;
+  if (!(n >= 1 && s >= 0 && s <= 100)) return;
+  var nowNo = noOf(today), live = n === nowNo && Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) >= DAY1;
+  if (n > nowNo + 1) return;   // (a run that has not been: no dare)
+  set('dare-say', 'I scored ' + s + '. Beat me.');
+  set('dare-run', 'Portbound #' + n + (live ? ", today's run: three trips, a score out of 100." : ': three trips, a score out of 100.'));
+  var ends = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1)), hm = String(ends.getHours()).padStart(2, '0') + ':' + String(ends.getMinutes()).padStart(2, '0');
+  set('dare-then', live ? 'It is the same run for you, open until ' + hm + ' on your clock.' : 'That run is over. Every day brings a new one, the same for every player.');
+  document.getElementById('dare').hidden = false;
+  document.title = 'Portbound #' + n + ': ' + s + '/100. Beat me.';
+  leadOf(dateOf(n)).then(function (L) { if (L) set('dare-head', L.h).hidden = false; });
 })();
 </script>
 </body>
