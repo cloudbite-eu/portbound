@@ -2,7 +2,7 @@
  "date": "2026-11-14",
  "v": 1,
  "seed": "2026-11-14",
- "made": "2026-11-12",
+ "made": "2026-11-13",
  "events": [
   {
    "start": "2026-11-14",
@@ -12,9 +12,59 @@
    "port": "houston",
    "sev": 2,
    "days": 1,
+   "lead": true,
    "h": "Gulf Coast diesel costs two thirds more than a year ago",
    "src": "U.S. Energy Information Administration",
-   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+   "url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epd2d_pte_dpgal_w.htm"
+  },
+  {
+   "start": "2026-11-14",
+   "id": "r14",
+   "cat": "energy",
+   "tpl": "lngspike",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Germany's gas stores fell short of their winter target",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/germany-to-set-up-state-gas-reserve-after-missing-winter-storage-targets/"
+  },
+  {
+   "start": "2026-11-14",
+   "id": "r15",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 2,
+   "h": "Panama Canal keeps a cap of 34 ships a day",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-14",
+   "id": "r16",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "fremantle",
+   "sev": 2,
+   "days": 2,
+   "h": "Australia's wheat crop forecast raised to 32.5 million tons",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  },
+  {
+   "start": "2026-11-14",
+   "id": "r17",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "buenosaires",
+   "sev": 1,
+   "days": 2,
+   "h": "Argentina's wheat exports forecast a million tons higher",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
   }
  ],
  "gen": [
@@ -116,5 +166,6 @@
    "days": 1,
    "port": "sydney"
   }
- ]
+ ],
+ "final": true
 }

@@ -2,8 +2,46 @@
  "date": "2026-11-15",
  "v": 1,
  "seed": "2026-11-15",
- "made": "2026-11-12",
- "events": [],
+ "made": "2026-11-13",
+ "events": [
+  {
+   "start": "2026-11-14",
+   "id": "r15",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 2,
+   "h": "Panama Canal keeps a cap of 34 ships a day",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-14",
+   "id": "r16",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "fremantle",
+   "sev": 2,
+   "days": 2,
+   "h": "Australia's wheat crop forecast raised to 32.5 million tons",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  },
+  {
+   "start": "2026-11-14",
+   "id": "r17",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "buenosaires",
+   "sev": 1,
+   "days": 2,
+   "h": "Argentina's wheat exports forecast a million tons higher",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-15:neu",
