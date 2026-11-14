@@ -2,8 +2,33 @@
  "date": "2026-11-15",
  "v": 1,
  "seed": "2026-11-15",
- "made": "2026-11-13",
+ "made": "2026-11-14",
  "events": [
+  {
+   "start": "2026-11-15",
+   "id": "r18",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "losangeles",
+   "sev": 2,
+   "days": 2,
+   "lead": true,
+   "h": "California diesel costs nearly eight dollars a gallon",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epd2d_pte_dpgal_w.htm"
+  },
+  {
+   "start": "2026-11-15",
+   "id": "r19",
+   "cat": "energy",
+   "tpl": "lngspike",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Germany's gas stores began winter below their target",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/germany-to-set-up-state-gas-reserve-after-missing-winter-storage-targets/"
+  },
   {
    "start": "2026-11-14",
    "id": "r15",
@@ -143,5 +168,6 @@
    "days": 1,
    "port": "brisbane"
   }
- ]
+ ],
+ "final": true
 }

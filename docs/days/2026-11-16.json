@@ -2,8 +2,21 @@
  "date": "2026-11-16",
  "v": 1,
  "seed": "2026-11-16",
- "made": "2026-11-12",
- "events": [],
+ "made": "2026-11-14",
+ "events": [
+  {
+   "start": "2026-11-15",
+   "id": "r18",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "losangeles",
+   "sev": 2,
+   "days": 2,
+   "h": "California diesel costs nearly eight dollars a gallon",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epd2d_pte_dpgal_w.htm"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-16:neu",

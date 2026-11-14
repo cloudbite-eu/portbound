@@ -1,0 +1,111 @@
+{
+ "date": "2026-12-14",
+ "v": 1,
+ "seed": "2026-12-14",
+ "made": "2026-11-14",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-12-14:neu",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-12-14",
+   "days": 1,
+   "a": "rotterdam",
+   "b": "lehavre"
+  },
+  {
+   "id": "h:2026-12-14:med",
+   "tpl": "dutyup",
+   "sev": 3,
+   "start": "2026-12-14",
+   "days": 1,
+   "port": "piraeus"
+  },
+  {
+   "id": "h:2026-12-14:nae",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-12-14",
+   "days": 1,
+   "a": "savannah",
+   "b": "baltimore"
+  },
+  {
+   "id": "h:2026-12-13:ngm",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-13",
+   "days": 2,
+   "port": "veracruz",
+   "good": "cars"
+  },
+  {
+   "id": "h:2026-12-14:naw",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-12-14",
+   "days": 1,
+   "port": "manzanillo"
+  },
+  {
+   "id": "h:2026-12-14:sam",
+   "tpl": "carshow",
+   "sev": 3,
+   "start": "2026-12-14",
+   "days": 1,
+   "port": "callao"
+  },
+  {
+   "id": "h:2026-12-13:eas",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-13",
+   "days": 2,
+   "port": "busan",
+   "good": "coats"
+  },
+  {
+   "id": "h:2026-12-14:sea",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-12-14",
+   "days": 1,
+   "port": "hochiminh"
+  },
+  {
+   "id": "h:2026-12-14:sas",
+   "tpl": "storm",
+   "sev": 3,
+   "start": "2026-12-14",
+   "days": 1,
+   "a": "colombo",
+   "b": "chennai"
+  },
+  {
+   "id": "h:2026-12-14:afw",
+   "tpl": "pirates",
+   "sev": 2,
+   "start": "2026-12-14",
+   "days": 1,
+   "a": "abidjan",
+   "b": "dakar"
+  },
+  {
+   "id": "h:2026-12-14:afs",
+   "tpl": "crane",
+   "sev": 2,
+   "start": "2026-12-14",
+   "days": 1,
+   "port": "mombasa"
+  },
+  {
+   "id": "h:2026-12-14:oce",
+   "tpl": "carshow",
+   "sev": 3,
+   "start": "2026-12-14",
+   "days": 1,
+   "port": "sydney"
+  }
+ ]
+}
