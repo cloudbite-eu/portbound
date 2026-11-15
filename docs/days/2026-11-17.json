@@ -2,8 +2,34 @@
  "date": "2026-11-17",
  "v": 1,
  "seed": "2026-11-17",
- "made": "2026-11-12",
- "events": [],
+ "made": "2026-11-15",
+ "events": [
+  {
+   "start": "2026-11-17",
+   "id": "r25",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-17",
+   "id": "r26",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "fremantle",
+   "sev": 2,
+   "days": 1,
+   "h": "Australia's wheat crop forecast at 32.5 million tons",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-17:neu",

@@ -2,8 +2,58 @@
  "date": "2026-11-16",
  "v": 1,
  "seed": "2026-11-16",
- "made": "2026-11-14",
+ "made": "2026-11-15",
  "events": [
+  {
+   "start": "2026-11-16",
+   "id": "r20",
+   "cat": "energy",
+   "tpl": "lngspike",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "lead": true,
+   "h": "Germany heads into winter with gas stores below target",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/germany-to-set-up-state-gas-reserve-after-missing-winter-storage-targets/"
+  },
+  {
+   "start": "2026-11-16",
+   "id": "r21",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-16",
+   "id": "r22",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "fremantle",
+   "sev": 2,
+   "days": 1,
+   "h": "Australia's wheat crop forecast at 32.5 million tons",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  },
+  {
+   "start": "2026-11-16",
+   "id": "r23",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "buenosaires",
+   "sev": 1,
+   "days": 1,
+   "h": "Argentina's corn crop forecast two million tons larger",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  },
   {
    "start": "2026-11-15",
    "id": "r18",
@@ -118,5 +168,6 @@
    "days": 1,
    "port": "fremantle"
   }
- ]
+ ],
+ "final": true
 }
