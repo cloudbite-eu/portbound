@@ -2,7 +2,7 @@
  "date": "2026-11-17",
  "v": 1,
  "seed": "2026-11-17",
- "made": "2026-11-15",
+ "made": "2026-11-16",
  "events": [
   {
    "start": "2026-11-17",
@@ -25,7 +25,44 @@
    "port": "fremantle",
    "sev": 2,
    "days": 1,
+   "lead": true,
    "h": "Australia's wheat crop forecast at 32.5 million tons",
+   "src": "USDA Foreign Agricultural Service",
+   "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
+  },
+  {
+   "start": "2026-11-17",
+   "id": "r27",
+   "cat": "ports",
+   "tpl": "crane",
+   "port": "durban",
+   "sev": 2,
+   "days": 1,
+   "h": "Ships wait twice as long at Durban's container terminal",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/south-africas-auto-industry-threatened-by-worsening-port-delays/"
+  },
+  {
+   "start": "2026-11-17",
+   "id": "r28",
+   "cat": "energy",
+   "tpl": "lngspike",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Germany's gas stores stay below their winter target",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/germany-to-set-up-state-gas-reserve-after-missing-winter-storage-targets/"
+  },
+  {
+   "start": "2026-11-17",
+   "id": "r29",
+   "cat": "food",
+   "tpl": "harvest",
+   "port": "buenosaires",
+   "sev": 1,
+   "days": 1,
+   "h": "Argentina's corn crop forecast two million tons larger",
    "src": "USDA Foreign Agricultural Service",
    "url": "https://apps.fas.usda.gov/psdonline/circulars/grain.pdf"
   }
@@ -133,5 +170,6 @@
    "port": "auckland",
    "good": "phones"
   }
- ]
+ ],
+ "final": true
 }
