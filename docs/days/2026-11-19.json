@@ -2,8 +2,70 @@
  "date": "2026-11-19",
  "v": 1,
  "seed": "2026-11-19",
- "made": "2026-11-17",
+ "made": "2026-11-18",
  "events": [
+  {
+   "start": "2026-11-19",
+   "id": "r39",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "genoa",
+   "sev": 1,
+   "days": 1,
+   "lead": true,
+   "h": "Thunderstorm warning for the Genoa coast on Thursday",
+   "src": "Meteoalarm (EUMETNET)",
+   "url": "https://feeds.meteoalarm.org/api/v1/warnings/feeds-italy/554ba8e8-c751-4881-a7b9-da007516b2e1"
+  },
+  {
+   "start": "2026-11-19",
+   "id": "r40",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "singapore",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Singapore now needs over two weeks of notice",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-east-of-suez-bunker-fuel-availability-outlook-210/"
+  },
+  {
+   "start": "2026-11-19",
+   "id": "r41",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "yokohama",
+   "sev": 1,
+   "days": 1,
+   "h": "Japan's ship fuel for November is nearly sold out",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-east-of-suez-bunker-fuel-availability-outlook-210/"
+  },
+  {
+   "start": "2026-11-19",
+   "id": "r42",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "baltimore",
+   "sev": 2,
+   "days": 1,
+   "h": "Diesel near Baltimore costs over six dollars a gallon",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-19",
+   "id": "r43",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "chennai",
+   "sev": 2,
+   "days": 1,
+   "nobonus": true,
+   "h": "Cyclone in the Bay of Bengal heads for India's east coast",
+   "src": "GDACS (Global Disaster Alert and Coordination System)",
+   "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001351"
+  },
   {
    "start": "2026-11-19",
    "id": "r37",
@@ -131,5 +193,6 @@
    "a": "brisbane",
    "b": "fremantle"
   }
- ]
+ ],
+ "final": true
 }

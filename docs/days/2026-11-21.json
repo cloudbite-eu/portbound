@@ -2,8 +2,33 @@
  "date": "2026-11-21",
  "v": 1,
  "seed": "2026-11-21",
- "made": "2026-11-15",
- "events": [],
+ "made": "2026-11-18",
+ "events": [
+  {
+   "start": "2026-11-20",
+   "id": "r44",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 2,
+   "days": 3,
+   "h": "Gdańsk's Christmas market opens on Friday",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
+  {
+   "start": "2026-11-20",
+   "id": "r45",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 2,
+   "days": 3,
+   "h": "Los Angeles Auto Show opens to the public on Friday",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-21:neu",
