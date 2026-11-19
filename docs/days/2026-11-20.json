@@ -2,7 +2,7 @@
  "date": "2026-11-20",
  "v": 1,
  "seed": "2026-11-20",
- "made": "2026-11-18",
+ "made": "2026-11-19",
  "events": [
   {
    "start": "2026-11-20",
@@ -12,6 +12,7 @@
    "port": "gdansk",
    "sev": 2,
    "days": 3,
+   "lead": true,
    "h": "Gdańsk's Christmas market opens on Friday",
    "src": "Super Express",
    "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
@@ -27,6 +28,55 @@
    "h": "Los Angeles Auto Show opens to the public on Friday",
    "src": "LA Auto Show",
    "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-20",
+   "id": "r46",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "rotterdam",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel around Rotterdam needs up to a week's notice",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-208/"
+  },
+  {
+   "start": "2026-11-20",
+   "id": "r47",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Piraeus needs a week's notice or more",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-208/"
+  },
+  {
+   "start": "2026-11-20",
+   "id": "r48",
+   "cat": "energy",
+   "tpl": "lngspike",
+   "port": "lehavre",
+   "sev": 1,
+   "days": 1,
+   "h": "Europe starts winter with its lowest gas stores of the 2020s",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/30-lng-meets-the-thinnest-european-storage-of-the-decade/"
+  },
+  {
+   "start": "2026-11-20",
+   "id": "r49",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
   }
  ],
  "gen": [
@@ -128,5 +178,6 @@
    "days": 1,
    "port": "auckland"
   }
- ]
+ ],
+ "final": true
 }

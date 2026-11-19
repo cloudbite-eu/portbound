@@ -2,8 +2,21 @@
  "date": "2026-11-21",
  "v": 1,
  "seed": "2026-11-21",
- "made": "2026-11-18",
+ "made": "2026-11-19",
  "events": [
+  {
+   "start": "2026-11-21",
+   "id": "r50",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
   {
    "start": "2026-11-20",
    "id": "r44",
