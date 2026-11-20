@@ -2,8 +2,69 @@
  "date": "2026-11-21",
  "v": 1,
  "seed": "2026-11-21",
- "made": "2026-11-19",
+ "made": "2026-11-20",
  "events": [
+  {
+   "start": "2026-11-20",
+   "id": "r45",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 2,
+   "days": 3,
+   "lead": true,
+   "h": "Los Angeles Auto Show runs through the weekend",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-21",
+   "id": "r51",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "dakar",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Dakar is booked until the middle of next week",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-208/"
+  },
+  {
+   "start": "2026-11-21",
+   "id": "r52",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "durban",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Durban still needs up to a week's notice",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-208/"
+  },
+  {
+   "start": "2026-11-21",
+   "id": "r53",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "antwerp",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel around Antwerp needs about a week of notice",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-208/"
+  },
+  {
+   "start": "2026-11-21",
+   "id": "r54",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Piraeus is tight for prompt deliveries",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-208/"
+  },
   {
    "start": "2026-11-21",
    "id": "r50",
@@ -28,18 +89,6 @@
    "h": "Gdańsk's Christmas market opens on Friday",
    "src": "Super Express",
    "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
-  },
-  {
-   "start": "2026-11-20",
-   "id": "r45",
-   "cat": "autos",
-   "tpl": "carshow",
-   "port": "losangeles",
-   "sev": 2,
-   "days": 3,
-   "h": "Los Angeles Auto Show opens to the public on Friday",
-   "src": "LA Auto Show",
-   "url": "https://laautoshow.com/know-before-you-go/"
   }
  ],
  "gen": [
@@ -143,5 +192,6 @@
    "days": 1,
    "port": "melbourne"
   }
- ]
+ ],
+ "final": true
 }
