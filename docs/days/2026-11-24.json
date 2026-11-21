@@ -2,8 +2,21 @@
  "date": "2026-11-24",
  "v": 1,
  "seed": "2026-11-24",
- "made": "2026-11-20",
- "events": [],
+ "made": "2026-11-21",
+ "events": [
+  {
+   "start": "2026-11-23",
+   "id": "r60",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "hamburg",
+   "sev": 2,
+   "days": 2,
+   "h": "Hamburg's Christmas market on the Rathausmarkt opens on Monday",
+   "src": "hamburg.de",
+   "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-23:neu",

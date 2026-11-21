@@ -2,8 +2,69 @@
  "date": "2026-11-22",
  "v": 1,
  "seed": "2026-11-22",
- "made": "2026-11-20",
+ "made": "2026-11-21",
  "events": [
+  {
+   "start": "2026-11-22",
+   "id": "r55",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "genoa",
+   "sev": 2,
+   "days": 1,
+   "lead": true,
+   "h": "Orange thunderstorm warning for the Genoa coast on Sunday morning",
+   "src": "Meteoalarm (EUMETNET)",
+   "url": "https://feeds.meteoalarm.org/feeds/meteoalarm-legacy-atom-italy"
+  },
+  {
+   "start": "2026-11-22",
+   "id": "r56",
+   "cat": "weather",
+   "tpl": "coldsnap",
+   "port": "busan",
+   "sev": 1,
+   "days": 1,
+   "h": "Korea's cold snap peaks on Sunday, Seoul near minus four",
+   "src": "SBS News",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008856659"
+  },
+  {
+   "start": "2026-11-22",
+   "id": "r57",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "newyork",
+   "sev": 1,
+   "days": 1,
+   "h": "Central Atlantic diesel costs over two dollars more than last year",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-22",
+   "id": "r58",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "houston",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Houston is tight for prompt deliveries",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-americas-bunker-fuel-availability-outlook-127/"
+  },
+  {
+   "start": "2026-11-22",
+   "id": "r59",
+   "cat": "energy",
+   "tpl": "dutycut",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Greece pays ferries 16 cents a litre toward fuel until year end",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/greece-moves-ahead-with-e32-million-ferry-fuel-support/"
+  },
   {
    "start": "2026-11-20",
    "id": "r45",
@@ -129,5 +190,6 @@
    "a": "sydney",
    "b": "fremantle"
   }
- ]
+ ],
+ "final": true
 }

@@ -2,8 +2,33 @@
  "date": "2026-11-23",
  "v": 1,
  "seed": "2026-11-23",
- "made": "2026-11-20",
- "events": [],
+ "made": "2026-11-21",
+ "events": [
+  {
+   "start": "2026-11-23",
+   "id": "r60",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "hamburg",
+   "sev": 2,
+   "days": 2,
+   "h": "Hamburg's Christmas market on the Rathausmarkt opens on Monday",
+   "src": "hamburg.de",
+   "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  },
+  {
+   "start": "2026-11-23",
+   "id": "r61",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Los Angeles Auto Show stays open until 29 November",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-23:neu",
