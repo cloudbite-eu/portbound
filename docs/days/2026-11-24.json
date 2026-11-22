@@ -2,8 +2,44 @@
  "date": "2026-11-24",
  "v": 1,
  "seed": "2026-11-24",
- "made": "2026-11-21",
+ "made": "2026-11-22",
  "events": [
+  {
+   "start": "2026-11-24",
+   "id": "r65",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "oakland",
+   "sev": 2,
+   "days": 1,
+   "h": "Wet, windy storm due in northern California on Tuesday",
+   "src": "The Weather Channel",
+   "url": "https://weather.com/2026/11/21/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms"
+  },
+  {
+   "start": "2026-11-24",
+   "id": "r66",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Los Angeles Auto Show stays open until 29 November",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-24",
+   "id": "r67",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 1,
+   "days": 1,
+   "h": "Gdańsk's Christmas market runs every day until 23 December",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
   {
    "start": "2026-11-23",
    "id": "r60",

@@ -2,7 +2,7 @@
  "date": "2026-11-23",
  "v": 1,
  "seed": "2026-11-23",
- "made": "2026-11-21",
+ "made": "2026-11-22",
  "events": [
   {
    "start": "2026-11-23",
@@ -12,6 +12,7 @@
    "port": "hamburg",
    "sev": 2,
    "days": 2,
+   "lead": true,
    "h": "Hamburg's Christmas market on the Rathausmarkt opens on Monday",
    "src": "hamburg.de",
    "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
@@ -27,6 +28,43 @@
    "h": "Los Angeles Auto Show stays open until 29 November",
    "src": "LA Auto Show",
    "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-23",
+   "id": "r62",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 1,
+   "days": 1,
+   "h": "Gdańsk's Christmas market is in its first full week",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
+  {
+   "start": "2026-11-23",
+   "id": "r63",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-23",
+   "id": "r64",
+   "cat": "energy",
+   "tpl": "dutycut",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Greece pays ferries 16 cents a litre toward fuel until year end",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/greece-moves-ahead-with-e32-million-ferry-fuel-support/"
   }
  ],
  "gen": [
@@ -133,5 +171,6 @@
    "port": "sydney",
    "good": "lng"
   }
- ]
+ ],
+ "final": true
 }

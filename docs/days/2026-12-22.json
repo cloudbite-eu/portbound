@@ -1,0 +1,108 @@
+{
+ "date": "2026-12-22",
+ "v": 1,
+ "seed": "2026-12-22",
+ "made": "2026-11-22",
+ "events": [],
+ "gen": [
+  {
+   "id": "h:2026-12-22:neu",
+   "tpl": "storm",
+   "sev": 2,
+   "start": "2026-12-22",
+   "days": 1,
+   "a": "antwerp",
+   "b": "lehavre"
+  },
+  {
+   "id": "h:2026-12-22:med",
+   "tpl": "carshow",
+   "sev": 3,
+   "start": "2026-12-22",
+   "days": 1,
+   "port": "valencia"
+  },
+  {
+   "id": "h:2026-12-21:nae",
+   "tpl": "dutycut",
+   "sev": 2,
+   "start": "2026-12-21",
+   "days": 2,
+   "port": "newyork"
+  },
+  {
+   "id": "h:2026-12-21:ngm",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-12-21",
+   "days": 2,
+   "port": "kingston"
+  },
+  {
+   "id": "h:2026-12-22:naw",
+   "tpl": "surplus",
+   "sev": 2,
+   "start": "2026-12-22",
+   "days": 1,
+   "port": "manzanillo",
+   "good": "phones"
+  },
+  {
+   "id": "h:2026-12-22:sam",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-12-22",
+   "days": 1,
+   "port": "montevideo"
+  },
+  {
+   "id": "h:2026-12-22:eas",
+   "tpl": "festival",
+   "sev": 2,
+   "start": "2026-12-22",
+   "days": 1,
+   "port": "shanghai"
+  },
+  {
+   "id": "h:2026-12-22:sea",
+   "tpl": "carshow",
+   "sev": 2,
+   "start": "2026-12-22",
+   "days": 1,
+   "port": "hochiminh"
+  },
+  {
+   "id": "h:2026-12-21:sas",
+   "tpl": "dutycut",
+   "sev": 2,
+   "start": "2026-12-21",
+   "days": 2,
+   "port": "karachi"
+  },
+  {
+   "id": "h:2026-12-21:afw",
+   "tpl": "storm",
+   "sev": 2,
+   "start": "2026-12-21",
+   "days": 2,
+   "a": "tema",
+   "b": "abidjan"
+  },
+  {
+   "id": "h:2026-12-21:afs",
+   "tpl": "strike",
+   "sev": 2,
+   "start": "2026-12-21",
+   "days": 2,
+   "port": "maputo"
+  },
+  {
+   "id": "h:2026-12-22:oce",
+   "tpl": "fuelspike",
+   "sev": 3,
+   "start": "2026-12-22",
+   "days": 1,
+   "port": "fremantle"
+  }
+ ]
+}
