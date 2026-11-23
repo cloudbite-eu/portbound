@@ -2,8 +2,81 @@
  "date": "2026-11-25",
  "v": 1,
  "seed": "2026-11-25",
- "made": "2026-11-22",
- "events": [],
+ "made": "2026-11-23",
+ "events": [
+  {
+   "start": "2026-11-25",
+   "id": "r72",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "seattle",
+   "sev": 2,
+   "days": 1,
+   "h": "Second, windier storm may reach the Pacific Northwest on Wednesday",
+   "src": "The Weather Channel",
+   "url": "https://weather.com/2026/11/21/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r73",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "baltimore",
+   "sev": 1,
+   "days": 1,
+   "h": "Rain and wind reach the mid-Atlantic coast on Wednesday",
+   "src": "The Weather Channel",
+   "url": "https://weather.com/2026/11/21/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r74",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Los Angeles Auto Show stays open until 29 November",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r75",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 1,
+   "days": 1,
+   "h": "Gdańsk's Christmas market runs every day until 23 December",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r76",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Hamburg's Christmas market on the Rathausmarkt runs until 23 December",
+   "src": "hamburg.de",
+   "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  },
+  {
+   "start": "2026-11-24",
+   "id": "r68",
+   "cat": "weather",
+   "tpl": "coldsnap",
+   "port": "busan",
+   "sev": 1,
+   "days": 2,
+   "h": "Cold air reaches Korea on Tuesday, with mornings below freezing",
+   "src": "SBS News",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858107"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-25:neu",

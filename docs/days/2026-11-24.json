@@ -2,8 +2,21 @@
  "date": "2026-11-24",
  "v": 1,
  "seed": "2026-11-24",
- "made": "2026-11-22",
+ "made": "2026-11-23",
  "events": [
+  {
+   "start": "2026-11-24",
+   "id": "r68",
+   "cat": "weather",
+   "tpl": "coldsnap",
+   "port": "busan",
+   "sev": 1,
+   "days": 2,
+   "lead": true,
+   "h": "Cold air reaches Korea on Tuesday, with mornings below freezing",
+   "src": "SBS News",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858107"
+  },
   {
    "start": "2026-11-24",
    "id": "r65",
@@ -15,6 +28,43 @@
    "h": "Wet, windy storm due in northern California on Tuesday",
    "src": "The Weather Channel",
    "url": "https://weather.com/2026/11/21/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms"
+  },
+  {
+   "start": "2026-11-24",
+   "id": "r69",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-24",
+   "id": "r70",
+   "cat": "energy",
+   "tpl": "dutycut",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Greece pays ferries 16 cents a litre toward fuel until year end",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/greece-moves-ahead-with-e32-million-ferry-fuel-support/"
+  },
+  {
+   "start": "2026-11-24",
+   "id": "r71",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "houston",
+   "sev": 1,
+   "days": 1,
+   "h": "Gulf Coast diesel costs two dollars more than a year ago",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
   },
   {
    "start": "2026-11-24",
@@ -155,5 +205,6 @@
    "port": "sydney",
    "good": "lng"
   }
- ]
+ ],
+ "final": true
 }
