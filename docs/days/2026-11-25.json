@@ -2,32 +2,8 @@
  "date": "2026-11-25",
  "v": 1,
  "seed": "2026-11-25",
- "made": "2026-11-23",
+ "made": "2026-11-24",
  "events": [
-  {
-   "start": "2026-11-25",
-   "id": "r72",
-   "cat": "weather",
-   "tpl": "storm",
-   "port": "seattle",
-   "sev": 2,
-   "days": 1,
-   "h": "Second, windier storm may reach the Pacific Northwest on Wednesday",
-   "src": "The Weather Channel",
-   "url": "https://weather.com/2026/11/21/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms"
-  },
-  {
-   "start": "2026-11-25",
-   "id": "r73",
-   "cat": "weather",
-   "tpl": "storm",
-   "port": "baltimore",
-   "sev": 1,
-   "days": 1,
-   "h": "Rain and wind reach the mid-Atlantic coast on Wednesday",
-   "src": "The Weather Channel",
-   "url": "https://weather.com/2026/11/21/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms"
-  },
   {
    "start": "2026-11-25",
    "id": "r74",
@@ -36,9 +12,21 @@
    "port": "losangeles",
    "sev": 1,
    "days": 1,
-   "h": "Los Angeles Auto Show stays open until 29 November",
+   "h": "Los Angeles Auto Show stays open through Thanksgiving",
    "src": "LA Auto Show",
    "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r77",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "oakland",
+   "sev": 1,
+   "days": 1,
+   "h": "Coastal flood warning around San Francisco Bay until Thursday",
+   "src": "NOAA National Weather Service",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=37.8&lon=-122.33"
   },
   {
    "start": "2026-11-25",
@@ -50,7 +38,8 @@
    "days": 1,
    "h": "Gdańsk's Christmas market runs every day until 23 December",
    "src": "Super Express",
-   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html",
+   "lead": true
   },
   {
    "start": "2026-11-25",
@@ -63,6 +52,30 @@
    "h": "Hamburg's Christmas market on the Rathausmarkt runs until 23 December",
    "src": "hamburg.de",
    "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r78",
+   "cat": "energy",
+   "tpl": "dutycut",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Greek ferries get 16 cents a litre off fuel until year end",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/greece-moves-ahead-with-e32-million-ferry-fuel-support/"
+  },
+  {
+   "start": "2026-11-25",
+   "id": "r79",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "newyork",
+   "sev": 1,
+   "days": 1,
+   "h": "Mid-Atlantic diesel costs over two dollars more than last year",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
   },
   {
    "start": "2026-11-24",
@@ -179,5 +192,6 @@
    "days": 1,
    "port": "auckland"
   }
- ]
+ ],
+ "final": true
 }

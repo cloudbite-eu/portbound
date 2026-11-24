@@ -2,8 +2,57 @@
  "date": "2026-11-26",
  "v": 1,
  "seed": "2026-11-26",
- "made": "2026-11-23",
- "events": [],
+ "made": "2026-11-24",
+ "events": [
+  {
+   "start": "2026-11-26",
+   "id": "r80",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "baltimore",
+   "sev": 2,
+   "days": 2,
+   "h": "Gale watch on Chesapeake Bay as a coastal storm arrives",
+   "src": "NOAA National Weather Service",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=39.25&lon=-76.58"
+  },
+  {
+   "start": "2026-11-26",
+   "id": "r81",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Los Angeles Auto Show is open on Thanksgiving Day",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-26",
+   "id": "r82",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 1,
+   "days": 1,
+   "h": "Gdańsk's Christmas market runs every day until 23 December",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
+  {
+   "start": "2026-11-26",
+   "id": "r83",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Hamburg's Christmas market on the Rathausmarkt runs until 23 December",
+   "src": "hamburg.de",
+   "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-26:neu",

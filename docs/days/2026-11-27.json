@@ -2,8 +2,21 @@
  "date": "2026-11-27",
  "v": 1,
  "seed": "2026-11-27",
- "made": "2026-11-23",
- "events": [],
+ "made": "2026-11-24",
+ "events": [
+  {
+   "start": "2026-11-26",
+   "id": "r80",
+   "cat": "weather",
+   "tpl": "storm",
+   "port": "baltimore",
+   "sev": 2,
+   "days": 2,
+   "h": "Gale watch on Chesapeake Bay as a coastal storm arrives",
+   "src": "NOAA National Weather Service",
+   "url": "https://forecast.weather.gov/MapClick.php?lat=39.25&lon=-76.58"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-27:neu",
