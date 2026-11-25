@@ -2,19 +2,44 @@
  "date": "2026-11-26",
  "v": 1,
  "seed": "2026-11-26",
- "made": "2026-11-24",
+ "made": "2026-11-25",
  "events": [
   {
    "start": "2026-11-26",
    "id": "r80",
    "cat": "weather",
    "tpl": "storm",
-   "port": "baltimore",
+   "port": "newyork",
    "sev": 2,
    "days": 2,
-   "h": "Gale watch on Chesapeake Bay as a coastal storm arrives",
-   "src": "NOAA National Weather Service",
-   "url": "https://forecast.weather.gov/MapClick.php?lat=39.25&lon=-76.58"
+   "lead": true,
+   "h": "Thanksgiving nor'easter brings gusts over 50 mph to the Northeast coast",
+   "src": "The Weather Channel",
+   "url": "https://weather.com/2026/11/24/holiday/thanksgiving/east-coast-thanksgiving-storm-wind-rain-flooding"
+  },
+  {
+   "start": "2026-11-26",
+   "id": "r84",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "yokohama",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel is scarce at Tokyo and other Japanese ports",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-east-of-suez-bunker-fuel-availability-outlook-211/"
+  },
+  {
+   "start": "2026-11-26",
+   "id": "r85",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "singapore",
+   "sev": 1,
+   "days": 1,
+   "h": "Singapore's ship fuel barges are booked up through November",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-east-of-suez-bunker-fuel-availability-outlook-211/"
   },
   {
    "start": "2026-11-26",
@@ -156,5 +181,6 @@
    "days": 1,
    "port": "brisbane"
   }
- ]
+ ],
+ "final": true
 }
