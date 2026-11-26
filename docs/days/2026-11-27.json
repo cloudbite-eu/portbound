@@ -2,8 +2,21 @@
  "date": "2026-11-27",
  "v": 1,
  "seed": "2026-11-27",
- "made": "2026-11-25",
+ "made": "2026-11-26",
  "events": [
+  {
+   "start": "2026-11-27",
+   "id": "r87",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "lead": true,
+   "h": "Los Angeles Auto Show stays open until Sunday",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
   {
    "start": "2026-11-27",
    "id": "r86",
@@ -13,18 +26,6 @@
    "days": 1,
    "h": "Black Friday sales begin the day after Thanksgiving",
    "src": "US Courts"
-  },
-  {
-   "start": "2026-11-27",
-   "id": "r87",
-   "cat": "autos",
-   "tpl": "carshow",
-   "port": "losangeles",
-   "sev": 1,
-   "days": 1,
-   "h": "Los Angeles Auto Show stays open until Sunday",
-   "src": "LA Auto Show",
-   "url": "https://laautoshow.com/know-before-you-go/"
   },
   {
    "start": "2026-11-27",
@@ -49,6 +50,42 @@
    "h": "Hamburg's Christmas market on the Rathausmarkt runs until 23 December",
    "src": "hamburg.de",
    "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  },
+  {
+   "start": "2026-11-27",
+   "id": "r90",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "oakland",
+   "sev": 2,
+   "days": 1,
+   "h": "West Coast diesel costs nearly half more than last year",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-27",
+   "id": "r91",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "shanghai",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel supplies are limited at Shanghai",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-east-of-suez-bunker-fuel-availability-outlook-211/"
+  },
+  {
+   "start": "2026-11-27",
+   "id": "r92",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Ship fuel at Piraeus needs about a week's notice",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/engine-europe-africa-bunker-fuel-availability-outlook-209/"
   },
   {
    "start": "2026-11-26",
@@ -163,5 +200,6 @@
    "days": 1,
    "port": "sydney"
   }
- ]
+ ],
+ "final": true
 }

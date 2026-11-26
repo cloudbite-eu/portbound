@@ -2,8 +2,21 @@
  "date": "2026-11-29",
  "v": 1,
  "seed": "2026-11-29",
- "made": "2026-11-25",
- "events": [],
+ "made": "2026-11-26",
+ "events": [
+  {
+   "start": "2026-11-28",
+   "id": "r96",
+   "cat": "weather",
+   "tpl": "coldsnap",
+   "port": "busan",
+   "sev": 1,
+   "days": 2,
+   "h": "A brief cold snap returns to Korea over the weekend",
+   "src": "SBS",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008861747"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-29:neu",

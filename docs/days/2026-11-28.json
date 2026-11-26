@@ -2,8 +2,57 @@
  "date": "2026-11-28",
  "v": 1,
  "seed": "2026-11-28",
- "made": "2026-11-25",
- "events": [],
+ "made": "2026-11-26",
+ "events": [
+  {
+   "start": "2026-11-28",
+   "id": "r93",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Los Angeles Auto Show enters its final weekend",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-28",
+   "id": "r94",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 1,
+   "days": 1,
+   "h": "Gdańsk's Christmas market runs every day until 23 December",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
+  {
+   "start": "2026-11-28",
+   "id": "r95",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Hamburg's Christmas market on the Rathausmarkt runs until 23 December",
+   "src": "hamburg.de",
+   "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  },
+  {
+   "start": "2026-11-28",
+   "id": "r96",
+   "cat": "weather",
+   "tpl": "coldsnap",
+   "port": "busan",
+   "sev": 1,
+   "days": 2,
+   "h": "A brief cold snap returns to Korea over the weekend",
+   "src": "SBS",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008861747"
+  }
+ ],
  "gen": [
   {
    "id": "h:2026-11-27:neu",
