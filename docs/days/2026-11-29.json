@@ -2,8 +2,69 @@
  "date": "2026-11-29",
  "v": 1,
  "seed": "2026-11-29",
- "made": "2026-11-26",
+ "made": "2026-11-27",
  "events": [
+  {
+   "start": "2026-11-29",
+   "id": "r100",
+   "cat": "autos",
+   "tpl": "carshow",
+   "port": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Los Angeles Auto Show closes on Sunday",
+   "src": "LA Auto Show",
+   "url": "https://laautoshow.com/know-before-you-go/"
+  },
+  {
+   "start": "2026-11-29",
+   "id": "r101",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "gdansk",
+   "sev": 1,
+   "days": 1,
+   "h": "Gdańsk's Christmas market runs every day until 23 December",
+   "src": "Super Express",
+   "url": "https://www.se.pl/trojmiasto/gdansk-przygotowuje-sie-do-jarmarku-w-tym-roku-szykuja-sie-zmiany-w-lokalizacjach-aa-pFEt-b6cf-152r.html"
+  },
+  {
+   "start": "2026-11-29",
+   "id": "r102",
+   "cat": "food",
+   "tpl": "festival",
+   "port": "hamburg",
+   "sev": 1,
+   "days": 1,
+   "h": "Hamburg's Christmas market on the Rathausmarkt runs until 23 December",
+   "src": "hamburg.de",
+   "url": "https://www.hamburg.de/tourismus/weihnachten-hamburg/weihnachtsmarkt-hamburg/weihnachtsmarkt-rathausmarkt-301092"
+  },
+  {
+   "start": "2026-11-29",
+   "id": "r103",
+   "cat": "energy",
+   "tpl": "dutycut",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Greek ferries get 16 cents a litre off fuel until year end",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/greece-moves-ahead-with-e32-million-ferry-fuel-support/"
+  },
+  {
+   "start": "2026-11-29",
+   "id": "r104",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
   {
    "start": "2026-11-28",
    "id": "r96",
@@ -12,9 +73,9 @@
    "port": "busan",
    "sev": 1,
    "days": 2,
-   "h": "A brief cold snap returns to Korea over the weekend",
-   "src": "SBS",
-   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008861747"
+   "h": "Cold air returns to Korea this weekend, Seoul near minus two",
+   "src": "SBS News",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008865978"
   }
  ],
  "gen": [

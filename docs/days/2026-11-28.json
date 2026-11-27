@@ -2,8 +2,21 @@
  "date": "2026-11-28",
  "v": 1,
  "seed": "2026-11-28",
- "made": "2026-11-26",
+ "made": "2026-11-27",
  "events": [
+  {
+   "start": "2026-11-28",
+   "id": "r96",
+   "cat": "weather",
+   "tpl": "coldsnap",
+   "port": "busan",
+   "sev": 1,
+   "days": 2,
+   "lead": true,
+   "h": "Cold air returns to Korea this weekend, Seoul near minus two",
+   "src": "SBS News",
+   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008865978"
+  },
   {
    "start": "2026-11-28",
    "id": "r93",
@@ -42,15 +55,40 @@
   },
   {
    "start": "2026-11-28",
-   "id": "r96",
-   "cat": "weather",
-   "tpl": "coldsnap",
-   "port": "busan",
+   "id": "r97",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "houston",
    "sev": 1,
-   "days": 2,
-   "h": "A brief cold snap returns to Korea over the weekend",
-   "src": "SBS",
-   "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008861747"
+   "days": 1,
+   "h": "Gulf Coast diesel costs over half more than a year ago",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
+  },
+  {
+   "start": "2026-11-28",
+   "id": "r98",
+   "cat": "energy",
+   "tpl": "dutycut",
+   "port": "piraeus",
+   "sev": 1,
+   "days": 1,
+   "h": "Greek ferries get 16 cents a litre off fuel until year end",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/greece-moves-ahead-with-e32-million-ferry-fuel-support/"
+  },
+  {
+   "start": "2026-11-28",
+   "id": "r99",
+   "cat": "ports",
+   "tpl": "lanelimit",
+   "a": "veracruz",
+   "b": "losangeles",
+   "sev": 1,
+   "days": 1,
+   "h": "Panama Canal allows 34 ships a day and a deeper draft",
+   "src": "gCaptain",
+   "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
   }
  ],
  "gen": [
@@ -155,5 +193,6 @@
    "days": 1,
    "port": "brisbane"
   }
- ]
+ ],
+ "final": true
 }
