@@ -2,7 +2,7 @@
  "date": "2026-11-29",
  "v": 1,
  "seed": "2026-11-29",
- "made": "2026-11-27",
+ "made": "2026-11-28",
  "events": [
   {
    "start": "2026-11-29",
@@ -12,6 +12,7 @@
    "port": "losangeles",
    "sev": 1,
    "days": 1,
+   "lead": true,
    "h": "Los Angeles Auto Show closes on Sunday",
    "src": "LA Auto Show",
    "url": "https://laautoshow.com/know-before-you-go/"
@@ -64,6 +65,31 @@
    "h": "Panama Canal allows 34 ships a day and a deeper draft",
    "src": "gCaptain",
    "url": "https://gcaptain.com/panama-canal-raises-daily-transit-capacity-as-water-conditions-improve/"
+  },
+  {
+   "start": "2026-11-29",
+   "id": "r105",
+   "cat": "energy",
+   "tpl": "surplus",
+   "port": "singapore",
+   "good": "fuel",
+   "sev": 1,
+   "days": 1,
+   "h": "Singapore's fuel oil stocks are up 9% this month",
+   "src": "Hellenic Shipping News",
+   "url": "https://www.hellenicshippingnews.com/singapore-fuel-oil-inventories-rise-9-this-month/"
+  },
+  {
+   "start": "2026-11-29",
+   "id": "r106",
+   "cat": "energy",
+   "tpl": "fuelspike",
+   "port": "houston",
+   "sev": 1,
+   "days": 1,
+   "h": "Gulf Coast diesel costs over half more than a year ago",
+   "src": "U.S. Energy Information Administration",
+   "url": "https://www.eia.gov/petroleum/gasdiesel/"
   },
   {
    "start": "2026-11-28",
@@ -179,5 +205,6 @@
    "port": "sydney",
    "good": "phones"
   }
- ]
+ ],
+ "final": true
 }
